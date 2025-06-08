@@ -10,7 +10,7 @@
     </div>
     <!-- 数字按钮 -->
     <div class="flex w-full justify-center gap-2 py-2">
-        <button v-for="(img, index) in images" :key="index" @click="goTo(index)"
+        <button v-for="(_, index) in images" :key="index" @click="goTo(index)"
             :class="['btn btn-xs btn-outline', currentIndex === index ? 'btn-accent' : '']">
             {{ index + 1 }}
         </button>
@@ -103,7 +103,7 @@
             <div class="card-body">
                 <h2 class="card-title">{{ t("message.QandA") }}</h2>
                 <div class="collapse bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-1" checked="checked" />
+                    <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">How do I create an account?</div>
                     <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow
                         the
@@ -137,7 +137,6 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 import CarouselImage1 from '../assets/CarouselImage1.png';
 import CarouselImage2 from '../assets/CarouselImage2.png';
 import CarouselImage3 from '../assets/CarouselImage3.png';
-import u3CardJPG from "../assets/U3CardMiniApp.jpg";
 import u3CardPNG from "../assets/U3CardMiniApp.png";
 
 import { useI18n } from "vue-i18n";

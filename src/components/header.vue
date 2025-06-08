@@ -48,17 +48,17 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 const { t, locale } = useI18n();
 
-const changeLang = () => {
-    let lang: string;
-    if (locale.value == "zhCN") {
-        locale.value = "enUS";
-        lang = "enUS";
-    } else {
-        locale.value = "zhCN";
-        lang = "zhCN";
-    }
-    localStorage.setItem("LANG", lang);
-};
+// const changeLang = () => {
+//     let lang: string;
+//     if (locale.value == "zhCN") {
+//         locale.value = "enUS";
+//         lang = "enUS";
+//     } else {
+//         locale.value = "zhCN";
+//         lang = "zhCN";
+//     }
+//     localStorage.setItem("LANG", lang);
+// };
 const getCurrentLang = computed(() => {
     return locale.value;
 });
