@@ -4,14 +4,15 @@
         <!-- 轮播图片 -->
         <div class="carousel w-full">
             <div class="carousel-item w-full">
-                <img :src="images[currentIndex]" class="w-full transition-all duration-500" />
+                <img :src="images[currentIndex]" class="w-full transition-all duration-500"/>
             </div>
         </div>
     </div>
     <!-- 数字按钮 -->
     <div class="flex w-full justify-center gap-2 py-2">
-        <button v-for="(_, index) in images" :key="index" @click="goTo(index)"
-            :class="['btn btn-xs btn-outline', currentIndex === index ? 'btn-accent' : '']">
+        <button v-for="(_, index) in images" :key="index"
+                :class="['btn btn-xs btn-outline', currentIndex === index ? 'btn-accent' : '']"
+                @click="goTo(index)">
             {{ index + 1 }}
         </button>
     </div>
@@ -19,10 +20,10 @@
 
     <div class="fixed right-4 top-1/3 z-50">
         <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn m-1">
+            <div class="btn m-1" role="button" tabindex="0">
                 <div class="motion-scale-loop-150">
-                    <svg t="1749375783365" class="icon  w-5 h-5" viewBox="0 0 1453 1024" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" p-id="8462" width="200" height="200">
+                    <svg class="icon  w-5 h-5" height="200" p-id="8462" t="1749375783365"
+                         version="1.1" viewBox="0 0 1453 1024" width="200" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1399.759917 449.897807a261.586886 261.586886 0 0 0-253.870459-203.713681 252.327174 252.327174 0 0 0-161.273331 57.101562 285.507811 285.507811 0 0 1 23.920924 35.495566 210.658466 210.658466 0 0 1 137.352407-49.385135 219.918179 219.918179 0 0 1 215.288322 180.564399l-5.401499 7.716427a224.548035 224.548035 0 0 0-209.886823-146.612119 231.49282 231.49282 0 0 0-123.462838 37.038851 308.657093 308.657093 0 0 1 27.007496 127.321051 341.83773 341.83773 0 0 1-7.716427 69.447846c38.582137-6.944785 81.79413-16.204497 123.462837-22.377639a77.164273 77.164273 0 0 0 56.329919-43.983636 122.691194 122.691194 0 0 0 7.716428-33.95228 5.401499 5.401499 0 0 1 5.401499-6.173142 6.944785 6.944785 0 0 1 3.858214 0 308.657093 308.657093 0 0 1 54.014991 134.265836 158.958403 158.958403 0 0 1-46.298564 154.328546h5.401499a225.319678 225.319678 0 0 0 105.715054-128.864336 47.841849 47.841849 0 0 0 31.637352 20.834354 220.689821 220.689821 0 0 1-210.658466 163.588259 43.983636 43.983636 0 0 0-40.125422-27.007496 42.44035 42.44035 0 0 0-42.44035 42.44035 41.668708 41.668708 0 0 0 42.44035 41.668708 42.44035 42.44035 0 0 0 40.897065-29.322424A248.46896 248.46896 0 0 0 1419.822628 642.80849a50.156778 50.156778 0 0 0 30.094066-45.526921V499.282942a50.156778 50.156778 0 0 0-50.156777-49.385135z"
                             fill="#CA383E" p-id="8463"></path>
@@ -34,35 +35,35 @@
                 <span>&nbsp;&nbsp;{{ t("message.customerService") }}</span>
 
             </div>
-            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-35 p-2 shadow-sm">
+            <ul class="dropdown-content menu bg-base-100 rounded-box z-1 w-35 p-2 shadow-sm" tabindex="0">
                 <li><a href="https://api.whatsapp.com/qr/GVIK3QSKWBX3H1?autoload=1&app_absent=0">
-                        <div>
-                            <svg t="1749376452177" class="icon w-5 h-5" viewBox="0 0 1024 1024" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" p-id="9443" width="200" height="200">
-                                <path
-                                    d="M849.92 51.2H174.08c-67.8656 0-122.88 55.0144-122.88 122.88v675.84c0 67.8656 55.0144 122.88 122.88 122.88h675.84c67.8656 0 122.88-55.0144 122.88-122.88V174.08c0-67.8656-55.0144-122.88-122.88-122.88z m-337.90464 768.01024h-0.11776c-55.12704-0.02048-109.20448-14.81216-156.35456-42.80832l-11.23328-6.65088-116.27008 30.47936 31.04768-113.31072-7.31648-11.6224A306.42176 306.42176 0 0 1 204.8 511.85152c0.0768-169.3184 137.8816-307.06176 307.31264-307.06176 82.06848 0.02048 159.1808 32.00512 217.18528 90.05056 58.0096 58.04544 89.91744 135.21408 89.90208 217.26208-0.06144 169.34912-137.86112 307.10784-307.18464 307.10784z"
-                                    fill="#40C351" p-id="9444"></path>
-                                <path
-                                    d="M680.4992 589.2096c-9.23136-4.62848-54.64064-26.96192-63.10912-30.0288s-14.6176-4.608-20.79232 4.62848c-6.15424 9.23136-23.84384 30.03904-29.24032 36.18816-5.39136 6.1696-10.7776 6.94784-20.01408 2.31936-9.22112-4.63872-38.96832-14.37184-74.26048-45.82912-27.44832-24.46848-45.9776-54.69696-51.37408-63.94368-5.39136-9.22624-0.58368-14.22848 4.04992-18.8416 4.1472-4.1472 9.22624-10.78272 13.85984-16.1792 4.61312-5.39136 6.15424-9.24672 9.22624-15.39584 3.07712-6.17472 1.536-11.56096-0.77824-16.1792-2.2784-4.6336-20.224-50.29888-28.4416-68.56192-6.912-15.37536-14.19264-15.68768-20.79232-15.96416-5.39136-0.2304-11.54048-0.21504-17.69472-0.21504-6.14912 0-16.1536 2.31936-24.6272 11.56608-8.46848 9.24672-32.3328 31.57504-32.3328 77.00992 0 45.44 33.09056 89.344 37.70368 95.50336 4.61312 6.14912 63.89248 102.36928 157.75232 139.392 78.0032 30.76096 93.89056 24.64768 110.82752 23.11168 16.94208-1.53088 54.64064-22.31808 62.33088-43.89888 7.69536-21.56032 7.69536-40.0384 5.39648-43.88864-2.31424-3.86048-8.46336-6.15424-17.6896-10.79296z"
-                                    fill="#40C351" p-id="9445"></path>
-                            </svg>
-                        </div>
-                        <span>
+                    <div>
+                        <svg class="icon w-5 h-5" height="200" p-id="9443" t="1749376452177"
+                             version="1.1" viewBox="0 0 1024 1024" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M849.92 51.2H174.08c-67.8656 0-122.88 55.0144-122.88 122.88v675.84c0 67.8656 55.0144 122.88 122.88 122.88h675.84c67.8656 0 122.88-55.0144 122.88-122.88V174.08c0-67.8656-55.0144-122.88-122.88-122.88z m-337.90464 768.01024h-0.11776c-55.12704-0.02048-109.20448-14.81216-156.35456-42.80832l-11.23328-6.65088-116.27008 30.47936 31.04768-113.31072-7.31648-11.6224A306.42176 306.42176 0 0 1 204.8 511.85152c0.0768-169.3184 137.8816-307.06176 307.31264-307.06176 82.06848 0.02048 159.1808 32.00512 217.18528 90.05056 58.0096 58.04544 89.91744 135.21408 89.90208 217.26208-0.06144 169.34912-137.86112 307.10784-307.18464 307.10784z"
+                                fill="#40C351" p-id="9444"></path>
+                            <path
+                                d="M680.4992 589.2096c-9.23136-4.62848-54.64064-26.96192-63.10912-30.0288s-14.6176-4.608-20.79232 4.62848c-6.15424 9.23136-23.84384 30.03904-29.24032 36.18816-5.39136 6.1696-10.7776 6.94784-20.01408 2.31936-9.22112-4.63872-38.96832-14.37184-74.26048-45.82912-27.44832-24.46848-45.9776-54.69696-51.37408-63.94368-5.39136-9.22624-0.58368-14.22848 4.04992-18.8416 4.1472-4.1472 9.22624-10.78272 13.85984-16.1792 4.61312-5.39136 6.15424-9.24672 9.22624-15.39584 3.07712-6.17472 1.536-11.56096-0.77824-16.1792-2.2784-4.6336-20.224-50.29888-28.4416-68.56192-6.912-15.37536-14.19264-15.68768-20.79232-15.96416-5.39136-0.2304-11.54048-0.21504-17.69472-0.21504-6.14912 0-16.1536 2.31936-24.6272 11.56608-8.46848 9.24672-32.3328 31.57504-32.3328 77.00992 0 45.44 33.09056 89.344 37.70368 95.50336 4.61312 6.14912 63.89248 102.36928 157.75232 139.392 78.0032 30.76096 93.89056 24.64768 110.82752 23.11168 16.94208-1.53088 54.64064-22.31808 62.33088-43.89888 7.69536-21.56032 7.69536-40.0384 5.39648-43.88864-2.31424-3.86048-8.46336-6.15424-17.6896-10.79296z"
+                                fill="#40C351" p-id="9445"></path>
+                        </svg>
+                    </div>
+                    <span>
                             WhatsApp
                         </span>
-                    </a></li>
+                </a></li>
                 <li><a href="https://t.me/gdtund">
-                        <div>
-                            <svg t="1749376515091" class="icon w-5 h-5" viewBox="0 0 1024 1024" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" p-id="12106" width="200" height="200">
-                                <path
-                                    d="M679.424 746.862l84.005-395.996c7.424-34.852-12.581-48.567-35.438-40.009L234.277 501.138c-33.72 13.13-33.134 32-5.706 40.558l126.282 39.424 293.156-184.576c13.714-9.143 26.295-3.986 16.018 5.157L426.898 615.973l-9.143 130.304c13.13 0 18.871-5.706 25.71-12.581l61.696-59.429 128 94.282c23.442 13.129 40.01 6.29 46.3-21.724zM1024 512c0 282.843-229.157 512-512 512S0 794.843 0 512 229.157 0 512 0s512 229.157 512 512z"
-                                    fill="#1296DB" p-id="12107"></path>
-                            </svg>
-                        </div>
+                    <div>
+                        <svg class="icon w-5 h-5" height="200" p-id="12106" t="1749376515091"
+                             version="1.1" viewBox="0 0 1024 1024" width="200" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M679.424 746.862l84.005-395.996c7.424-34.852-12.581-48.567-35.438-40.009L234.277 501.138c-33.72 13.13-33.134 32-5.706 40.558l126.282 39.424 293.156-184.576c13.714-9.143 26.295-3.986 16.018 5.157L426.898 615.973l-9.143 130.304c13.13 0 18.871-5.706 25.71-12.581l61.696-59.429 128 94.282c23.442 13.129 40.01 6.29 46.3-21.724zM1024 512c0 282.843-229.157 512-512 512S0 794.843 0 512 229.157 0 512 0s512 229.157 512 512z"
+                                fill="#1296DB" p-id="12107"></path>
+                        </svg>
+                    </div>
 
-                        <span>TeleGram</span>
-                    </a></li>
+                    <span>TeleGram</span>
+                </a></li>
             </ul>
         </div>
     </div>
@@ -70,12 +71,18 @@
     <div class="px-3 mt-5">
         <div class="card bg-base-100 w-full shadow-md ">
             <figure>
-                <img class="" :src="u3CardPNG" alt="Shoes" />
+                <img :src="u3CardPNG" alt="Shoes" class=""/>
             </figure>
             <div class="card-body">
                 <h2 class="card-title">{{ t("message.card.card1") }}</h2>
                 <p>{{ t("message.card.card2") }}</p>
                 <div class="card-actions justify-end">
+                    <router-link to="/cardUsageRateDescription">
+                        <button class="btn">
+                            {{ t("message.reviewTheUsageRateDescription.rateDescription") }}
+                            <div class="">💡</div>
+                        </button>
+                    </router-link>
                     <router-link to="/card">
                         <button class="btn btn-primary">{{ t("message.card.card3") }}</button>
                     </router-link>
@@ -90,6 +97,12 @@
                 <h2 class="card-title">{{ t("message.usingTutorials") }}</h2>
                 <p>{{ t("message.usingTutorialsIntroduction") }}</p>
                 <div class="card-actions justify-end">
+                    <router-link to="/qalist">
+                        <button class="btn">
+                            查看常见问题
+                            <div class="badge badge-sm badge-secondary">+5</div>
+                        </button>
+                    </router-link>
                     <a href="https://www.notion.so/U3-Card-2050681df44480ec9600f08aba1b297e?source=copy_link">
                         <button class="btn btn-primary">{{ t("message.GoToCheck") }}</button>
                     </a>
@@ -98,33 +111,6 @@
         </div>
     </div>
 
-    <div class="px-3 mt-5">
-        <div class="card card-border bg-base-100 shadow-md">
-            <div class="card-body">
-                <h2 class="card-title">{{ t("message.QandA") }}</h2>
-                <div class="collapse bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-1" />
-                    <div class="collapse-title font-semibold">How do I create an account?</div>
-                    <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow
-                        the
-                        registration process.</div>
-                </div>
-                <div class="collapse bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-1" />
-                    <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-                    <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
-                        instructions sent to your email.</div>
-                </div>
-                <div class="collapse bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-1" />
-                    <div class="collapse-title font-semibold">How do I update my profile information?</div>
-                    <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                        changes.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="mt-5">
     </div>
@@ -132,15 +118,16 @@
 </template>
 
 
-<script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+<script lang="ts" setup>
+import {onBeforeUnmount, onMounted, ref} from 'vue';
 import CarouselImage1 from '../assets/CarouselImage1.png';
 import CarouselImage2 from '../assets/CarouselImage2.png';
 import CarouselImage3 from '../assets/CarouselImage3.png';
 import u3CardPNG from "../assets/U3CardMiniApp.png";
 
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+import {useI18n} from "vue-i18n";
+
+const {t} = useI18n();
 
 //_________ 轮播图
 const images = [CarouselImage1, CarouselImage2, CarouselImage3];
@@ -173,8 +160,8 @@ onBeforeUnmount(() => {
     clearInterval(timer);
 });
 
-//_________ 轮播图
 
+//_________ 轮播图
 
 
 </script>

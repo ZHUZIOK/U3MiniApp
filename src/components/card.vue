@@ -152,9 +152,10 @@
 </template>
 
 <script setup lang="ts">
+//------------- 多语言
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
-
+//------------- 回退按钮
 import { BackButton } from 'vue-tg';
 import router from '../router';
 function routerBackButton() { router.push("/"); }

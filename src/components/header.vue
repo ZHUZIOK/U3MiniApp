@@ -16,6 +16,8 @@
                         <ul class="p-2">
                             <li><a href="https://card.u3.com">U3 Card 官网</a></li>
                             <li><router-link to="/card"><a>U3 Card 卡片介绍</a></router-link></li>
+                            <li><router-link to="/cardUsageRateDescription"><a>U3 Card 费率说明</a></router-link></li>
+                            <li><router-link to="/qalist"><a>U3 Card 常见问题</a></router-link></li>
                         </ul>
                     </li>
                     <!-- <li><a @click="() => changeLang()">{{ t("message.switchLanguage") }}</a></li> -->
@@ -31,6 +33,8 @@
                     <ul class="p-2">
                         <li><a href="https://card.u3.com">U3 Card 官网</a></li>
                         <li><router-link to="/card"><a>U3 Card 卡片介绍</a></router-link></li>
+                        <li><router-link to="/cardUsageRateDescription"><a>U3 Card 费率说明</a></router-link></li>
+                        <li><router-link to="/qalist"><a>U3 Card 常见问题</a></router-link></li>
                     </ul>
                 </li>
                 <!-- <li><a @click="() => changeLang()">{{ t("message.switchLanguage") }}</a></li> -->
