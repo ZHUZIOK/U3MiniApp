@@ -14,7 +14,7 @@
                     <li>
                         <a>U3</a>
                         <ul class="p-2">
-                            <li><a href="https://card.u3.com">官网</a></li>
+                            <li><a @click="openNotionLink">官网</a></li>
                             <li><router-link to="/card"><a>卡片介绍</a></router-link></li>
                             <li><router-link to="/cardUsageRateDescription"><a>费率说明</a></router-link></li>
                             <li><router-link to="/qalist"><a>常见问题</a></router-link></li>
@@ -31,7 +31,7 @@
                 <li>
                     <a>U3</a>
                     <ul class="p-2">
-                        <li><a href="https://card.u3.com">官网</a></li>
+                        <li><a @click="openNotionLink">官网</a></li>
                         <li><router-link to="/card"><a>卡片介绍</a></router-link></li>
                         <li><router-link to="/cardUsageRateDescription"><a>费率说明</a></router-link></li>
                         <li><router-link to="/qalist"><a>常见问题</a></router-link></li>
@@ -41,7 +41,8 @@
             </ul>
         </div>
         <div class="navbar-end ">
-            <a class="btn" href="https://card.u3.com">{{ t("message.registrationAndLogin") }}</a>
+
+            <a @click="openNotionLink" class="btn" href="">{{ t("message.registrationAndLogin") }}</a>
         </div>
     </div>
 </template>
@@ -70,6 +71,14 @@ const getCurrentLang = computed(() => {
 console.log(getCurrentLang.value);
 console.log(t("message.hello"));
 
+// 在你的 Vue3 组件中
+const openNotionLink = () => {
+    if ((window as any).Telegram.WebApp.openLink) {
+        (window as any).Telegram.WebApp.openLink("https://card.u3.com");
+    } else {
+        window.open("https://card.u3.com", "_blank");
+    }
+};
 
 
 </script>

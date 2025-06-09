@@ -53,7 +53,7 @@
                     </li>
                 </ul>
                 <div class="mt-6">
-                    <a href="https://card.u3.com"><button class="btn btn-primary btn-block">{{ t("message.card.card11")
+                    <a @click="openNotionLink"><button class="btn btn-primary btn-block">{{ t("message.card.card11")
                     }}</button></a>
                 </div>
             </div>
@@ -122,19 +122,19 @@
                         <td>{{ t("message.card.card37") }}</td>
                         <td>{{ t("message.card.card37") }}</td>
                     </tr>
-                     <tr>
+                    <tr>
                         <th>{{ t("message.card.card23") }}</th>
                         <td>{{ t("message.card.card37") }}</td>
                         <td>{{ t("message.card.card37") }}</td>
                         <td>{{ t("message.card.card37") }}</td>
                     </tr>
-                     <tr>
+                    <tr>
                         <th>{{ t("message.card.card24") }}</th>
                         <td>{{ t("message.card.card37") }}</td>
                         <td>{{ t("message.card.card37") }}</td>
                         <td>{{ t("message.card.card38") }}</td>
                     </tr>
-                     <tr>
+                    <tr>
                         <th>{{ t("message.card.card25") }}</th>
                         <td>{{ t("message.card.card37") }}</td>
                         <td>{{ t("message.card.card38") }}</td>
@@ -148,7 +148,7 @@
     </div>
 
 
-     <BackButton @click="routerBackButton" />
+    <BackButton @click="routerBackButton" />
 </template>
 
 <script setup lang="ts">
@@ -159,4 +159,13 @@ const { t } = useI18n();
 import { BackButton } from 'vue-tg';
 import router from '../router';
 function routerBackButton() { router.push("/"); }
+
+
+const openNotionLink = () => {
+    if ((window as any).Telegram.WebApp.openLink) {
+        (window as any).Telegram.WebApp.openLink("https://card.u3.com");
+    } else {
+        window.open("https://card.u3.com", "_blank");
+    }
+};
 </script>
