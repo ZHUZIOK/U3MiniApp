@@ -51,7 +51,7 @@ export default {
         customerService: "客服",
         reviewTheUsageRateDescription: {
             rateDescription: "查看费率说明",
-            U3rateDescription: "U3 Card 使用費率說明",
+            U3rateDescription: "使用費率說明",
             cardDescription1: "一、交易參數",
             cardDescription11: "• 單筆交易金額上限：$20,000",
             cardDescription12: "• 每日交易筆數上限：100筆",

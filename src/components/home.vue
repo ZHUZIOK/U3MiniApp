@@ -103,7 +103,7 @@
                             <div class="badge badge-sm badge-secondary">+5</div>
                         </button>
                     </router-link>
-                    <a href="https://www.notion.so/U3-Card-2050681df44480ec9600f08aba1b297e?source=copy_link">
+                    <a href="https://www.notion.so/AP-Ucard-2050681df44480e79e95ffc462986a6e?source=copy_link">
                         <button class="btn btn-primary">{{ t("message.GoToCheck") }}</button>
                     </a>
                 </div>

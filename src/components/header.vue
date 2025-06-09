@@ -12,29 +12,29 @@
                 <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                     <li><a href="https://u3.com/">U3基金官网</a></li>
                     <li>
-                        <a>U3 Card</a>
+                        <a>U3</a>
                         <ul class="p-2">
-                            <li><a href="https://card.u3.com">U3 Card 官网</a></li>
-                            <li><router-link to="/card"><a>U3 Card 卡片介绍</a></router-link></li>
-                            <li><router-link to="/cardUsageRateDescription"><a>U3 Card 费率说明</a></router-link></li>
-                            <li><router-link to="/qalist"><a>U3 Card 常见问题</a></router-link></li>
+                            <li><a href="https://card.u3.com">官网</a></li>
+                            <li><router-link to="/card"><a>卡片介绍</a></router-link></li>
+                            <li><router-link to="/cardUsageRateDescription"><a>费率说明</a></router-link></li>
+                            <li><router-link to="/qalist"><a>常见问题</a></router-link></li>
                         </ul>
                     </li>
                     <!-- <li><a @click="() => changeLang()">{{ t("message.switchLanguage") }}</a></li> -->
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl">U3 Card</a>
+            <a class="btn btn-ghost text-xl">U3</a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a href="https://u3.com/">U3基金官网</a></li>
                 <li>
-                    <a>U3 Card</a>
+                    <a>U3</a>
                     <ul class="p-2">
-                        <li><a href="https://card.u3.com">U3 Card 官网</a></li>
-                        <li><router-link to="/card"><a>U3 Card 卡片介绍</a></router-link></li>
-                        <li><router-link to="/cardUsageRateDescription"><a>U3 Card 费率说明</a></router-link></li>
-                        <li><router-link to="/qalist"><a>U3 Card 常见问题</a></router-link></li>
+                        <li><a href="https://card.u3.com">官网</a></li>
+                        <li><router-link to="/card"><a>卡片介绍</a></router-link></li>
+                        <li><router-link to="/cardUsageRateDescription"><a>费率说明</a></router-link></li>
+                        <li><router-link to="/qalist"><a>常见问题</a></router-link></li>
                     </ul>
                 </li>
                 <!-- <li><a @click="() => changeLang()">{{ t("message.switchLanguage") }}</a></li> -->
