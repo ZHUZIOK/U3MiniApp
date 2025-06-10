@@ -50,10 +50,9 @@
                 </li>
             </ul>
         </div> -->
-        <div class="navbar-end ">
-
+        <!-- <div class="navbar-end ">
             <a @click="openNotionLink" class="btn" href="">{{ t("message.registrationAndLogin") }}</a>
-        </div>
+        </div> -->
     </div>
 </template>
 
