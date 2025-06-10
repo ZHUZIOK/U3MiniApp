@@ -153,7 +153,7 @@
                     <router-link to="/qalist">
                         <button class="btn">
                             {{ t("message.QAInfo.QAInfoView") }}
-                            <div class="badge badge-sm badge-secondary">+6</div>
+                            <div class="badge badge-sm badge-secondary">+9</div>
                         </button>
                     </router-link>
                     <a
