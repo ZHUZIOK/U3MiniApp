@@ -74,6 +74,10 @@ export default {
         QAInfo: {// Questions and Answers
             QAInfoView: "查看常见问题",
 
+            questions0: "U3基金概述",
+            qnswers0: "釋放 Web3 潛能，让用戶主導的 Web3 未來。” \nU3基金是一家全球化科技投資機構，聚焦區塊鏈、Web3、AI等前沿技術，以構建用戶核心Web3生態爲目標。",
+
+
             questions1: "问：为什么充值后提示余额不足？",
             qnswers1: "答：账户余额≠卡片余额，需要从U3的账户余额继续向卡片进行充值才能得到卡片余额。",
 
