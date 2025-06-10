@@ -118,7 +118,7 @@
     <div class="px-3 mt-5">
         <div class="card bg-base-100 w-full shadow-md">
             <figure>
-                <img :src="u3CardPNG" alt="Shoes" class="" />
+                <img :src="apayCardPNG" alt="Shoes" class="" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">{{ t("message.card.card1") }}</h2>
@@ -176,7 +176,7 @@ import { onBeforeUnmount, onMounted, ref } from "vue";
 import CarouselImage1 from "../assets/CarouselImage1.png";
 import CarouselImage2 from "../assets/CarouselImage2.png";
 import CarouselImage3 from "../assets/CarouselImage3.png";
-import u3CardPNG from "../assets/U3CardMiniApp.png";
+import apayCardPNG from "../assets/ApayMiniApp.png";
 
 import { useI18n } from "vue-i18n";
 

@@ -2,17 +2,17 @@
     <div>
         <div class="bg-base-200 min-h-screen px-3">
             <div class="hero-content flex-col lg:flex-row">
-                <img :src="U3CardMiniApp" alt="" class="max-w-sm rounded-lg shadow-2xl" />
+                <img :src="ApayCardMiniApp" alt="" class=" rounded-lg shadow-2xl" />
                 <div>
                     <h4 class="text-3xl font-bold">{{
                         t("message.reviewTheUsageRateDescription.U3rateDescription")
-                        }}</h4>
+                    }}</h4>
                 </div>
             </div>
             <div class="px-3">
                 <h4 class="text-1xl font-bold">{{
                     t("message.reviewTheUsageRateDescription.cardDescription1")
-                    }}</h4>
+                }}</h4>
                 <p class="py-3 px-3">
                     {{
                         t("message.reviewTheUsageRateDescription.cardDescription11")
@@ -32,7 +32,7 @@
             <div class="px-3 mt-5">
                 <h4 class="text-1xl font-bold">{{
                     t("message.reviewTheUsageRateDescription.cardDescription2")
-                    }}</h4>
+                }}</h4>
                 <p class="py-3 px-3">
                     {{
                         t("message.reviewTheUsageRateDescription.cardDescription21")
@@ -55,7 +55,7 @@
             <div class="px-3 mt-5">
                 <h4 class="text-1xl font-bold">{{
                     t("message.reviewTheUsageRateDescription.cardDescription3")
-                    }}</h4>
+                }}</h4>
                 <p class="py-3 px-3">
                     {{
                         t("message.reviewTheUsageRateDescription.cardDescription31")
@@ -69,7 +69,7 @@
             <div class="px-3 mt-5">
                 <h4 class="text-1xl font-bold">{{
                     t("message.reviewTheUsageRateDescription.cardDescription4")
-                    }}</h4>
+                }}</h4>
                 <p class="py-3 px-3">
                     {{
                         t("message.reviewTheUsageRateDescription.cardDescription41")
@@ -87,7 +87,7 @@
                 <p></p>
             </div>
 
-<!-- 
+            <!-- 
             <div class="fixed right-4 top-1/3 z-50">
                 <div class="dropdown dropdown-end">
                     <div class="btn m-1" role="button" tabindex="0">
@@ -146,7 +146,7 @@
 </template>
 
 <script lang="ts" setup>
-import U3CardMiniApp from "../assets/U3CardMiniApp.png";
+import ApayCardMiniApp from "../assets/ApayMiniApp.png";
 
 //------------- 多语言
 import { useI18n } from "vue-i18n";
