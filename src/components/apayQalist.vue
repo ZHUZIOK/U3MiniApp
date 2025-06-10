@@ -2,7 +2,7 @@
     <div class="px-3 mt-5">
         <div class="card card-border bg-base-100 shadow-md">
             <div class="card-body">
-                <h2 class="card-title">{{ t("message.ApayApayQAInfo.ApayQAInfoView") }}</h2>
+                <h2 class="card-title">{{ t("message.ApayQAInfo.QAInfoView") }}</h2>
                 <div class="collapse bg-base-100 border border-base-300">
                     <input name="my-accordion-1" type="radio" />
                     <div class="collapse-title font-semibold">{{ t("message.ApayQAInfo.questions1") }}</div>
