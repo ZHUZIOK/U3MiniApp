@@ -45,7 +45,7 @@
                     <div class="collapse-content text-sm">{{ t("message.QAInfo.qnswers6") }}
                     </div>
                 </div>
-                <div class="collapse bg-base-100 border border-base-300">
+                <!-- <div class="collapse bg-base-100 border border-base-300">
                     <input name="my-accordion-1" type="radio" />
                     <div class="collapse-title font-semibold">{{ t("message.QAInfo.questions7") }}</div>
                     <div class="collapse-content text-sm">{{ t("message.QAInfo.qnswers7") }}
@@ -56,7 +56,7 @@
                     <div class="collapse-title font-semibold">{{ t("message.QAInfo.questions8") }}</div>
                     <div class="collapse-content text-sm">{{ t("message.QAInfo.qnswers8") }}
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
