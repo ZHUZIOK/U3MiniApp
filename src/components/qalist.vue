@@ -49,7 +49,7 @@
         </div>
 
 
-        <div class="fixed right-4 top-1/3 z-50">
+        <!-- <div class="fixed right-4 top-1/3 z-50">
             <div class="dropdown dropdown-end">
                 <div class="btn m-1" role="button" tabindex="0">
                     <div class="motion-scale-loop-150">
@@ -98,7 +98,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </div>
     <BackButton @click="routerBackButton" />
 </template>
