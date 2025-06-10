@@ -20,6 +20,12 @@
                             <li><router-link to="/qalist"><a>常见问题</a></router-link></li>
                         </ul>
                     </li>
+                    <li>
+                        <a>Apay</a>
+                        <ul class="p-2">
+                            <li><router-link to="/apayQalist"><a>Apay 常见问题</a></router-link></li>
+                        </ul>
+                    </li>
                     <!-- <li><a @click="() => changeLang()">{{ t("message.switchLanguage") }}</a></li> -->
                 </ul>
             </div>
@@ -35,6 +41,12 @@
                         <li><router-link to="/card"><a>卡片介绍</a></router-link></li>
                         <li><router-link to="/cardUsageRateDescription"><a>费率说明</a></router-link></li>
                         <li><router-link to="/qalist"><a>常见问题</a></router-link></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Apay</a>
+                    <ul class="p-2">
+                        <li><router-link to="/apayQalist"><a>Apay 常见问题</a></router-link></li>
                     </ul>
                 </li>
                 <!-- <li><a @click="() => changeLang()">{{ t("message.switchLanguage") }}</a></li> -->
