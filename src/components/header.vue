@@ -81,13 +81,13 @@ console.log(getCurrentLang.value);
 console.log(t("message.hello"));
 
 // 在你的 Vue3 组件中
-const openNotionLink = () => {
-    if ((window as any).Telegram.WebApp.openLink) {
-        (window as any).Telegram.WebApp.openLink("https://card.u3.com");
-    } else {
-        window.open("https://card.u3.com", "_blank");
-    }
-};
+// const openNotionLink = () => {
+//     if ((window as any).Telegram.WebApp.openLink) {
+//         (window as any).Telegram.WebApp.openLink("https://card.u3.com");
+//     } else {
+//         window.open("https://card.u3.com", "_blank");
+//     }
+// };
 
 
 </script>
